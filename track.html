@@ -1,0 +1,60 @@
+..
+
+<!-- track.html (Expense Tracker Page) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Track Expenses</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Budget Tracker</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="track.html">Track Expenses</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section">
+      <h1>Track Your Expenses</h1>
+      <form id="expense-form">
+        <input type="text" id="expense-name" placeholder="Expense Name" required />
+        <input type="date" id="expense-date" required />
+        <input type="text" id="expense-category" placeholder="Category" required />
+        <input type="number" id="expense-amount" placeholder="Amount" required />
+        <button type="submit">Add Expense</button>
+      </form>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Date</th>
+            <th>Category</th>
+            <th>Amount</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="expense-table-body">
+          <!-- Dynamic rows will be added here -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <!-- <footer>
+    <p>&copy; 2025 Budget Tracker</p>
+  </footer> -->
+
+  <script src="script.js"></script>
+</body>
+</html>
